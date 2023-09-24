@@ -19,7 +19,7 @@ export default function solution(content) {
 
     const sortirovka = rows.map((row) => arr(row));
     const spisok = sortirovka.map((row) => row.namee);
-    const upRegistor = spisok.map((row, index) => spisok.indexOf(row) === index)
-    console.log(result.sort());
+    const upRegistor = spisok.map((row) => row[0].toUpperCase() + row.slice(1))
+    console.log(upRegistor.sort().join(', '));
   // END
 }
